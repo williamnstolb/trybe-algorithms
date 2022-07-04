@@ -1,6 +1,6 @@
 def find_duplicate(nums):
-    if isinstance(nums, list) or len(nums) == 0:
-        return None
+    if isinstance(nums, str) or len(nums) == 0 or len(nums) == 1:
+        return False
     original_list = nums.sort()
     duplicate_number_list = list()
     for i in range(len(original_list)):
